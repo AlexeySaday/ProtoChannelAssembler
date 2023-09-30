@@ -4,6 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>Channel</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -11,6 +12,7 @@
       <PackageReference Include="Grpc.Net.Client" Version="2.57.0" />
       <PackageReference Include="Grpc.Net.ClientFactory" Version="2.57.0" />
     </ItemGroup>
+
 
 
 </Project>

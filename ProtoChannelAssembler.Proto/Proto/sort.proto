@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package sort;
+
+option csharp_namespace = "ProtoChannelAssembler";
+
+import "google/protobuf/empty.proto"; 
+
+service Sort{
+    rpc GetAscendingSortedCurrenciesOrder(google.protobuf.Empty)
+        returns (GetAscendingSortedCurrenciesOrderResponse);
+}
+
+message GetAscendingSortedCurrenciesOrderResponse{
+    repeated CurrencyOrder currency_orders = 1;
+}
+
+message CurrencyOrder{
+    uint32 order = 1;
+    string currency_symbol = 2;
+}

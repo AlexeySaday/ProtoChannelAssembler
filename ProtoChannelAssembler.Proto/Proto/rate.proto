@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package rate;
+
+option csharp_namespace = "ProtoChannelAssembler";
+
+import "google/protobuf/empty.proto";
+
+service Rate{
+    rpc GetAscendingSortedCurrenciesOrder(google.protobuf.Empty)
+            returns (GetAscendingSortedCurrenciesOrderResponse);
+} 
